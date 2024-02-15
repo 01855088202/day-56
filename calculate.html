@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container text-center mt-5"style="width:600px">
+        <div class="row align-items-start">
+          <div style="height: 150px; background-color: rgb(185, 193, 227);" class="col">
+           <h2 style="margin-top: 30PX;">Balance<br> 50000</h2>
+           <hr>
+          </div>
+        
+        </div>
+      </div>
+
+      <div class="container text-center mt-5">
+        <div class="row align-items-start">
+          <div class="col">
+            <div class="card" style="width: 18rem; height: 150px; background-color: rgb(182, 189, 211); margin-left: 260px;">
+                <div class="card-body">
+                  <h5  class="card-title">Deposit</h5>
+                  <h5 id="amount1">560</h5>
+                  <p class="card-text"></p>
+                
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem; height: 150px; background-color: rgb(141, 176, 207); margin-left: 50px;"> 
+                <div class="card-body">
+                  <h5 class="card-title">Widthdraw<br></h5>
+                  <h5 id="amount2">200</h5>
+                  <p class="card-text"></p>
+                  
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center mt-5">
+        <div class="row align-items-start">
+          <div class="col">
+            <div class="card" style="width: 18rem; height: 150px; background-color: rgb(203, 218, 232); margin-left: 260px;">
+                <div class="card-body">
+                  <h5 class="card-title">Input <input id="input1" style="margin-top: 30px;" type="number"></h5>
+                  <button id="Deposit">click</button>
+
+                  <p class="card-text"></p>
+                
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem; height: 150px; background-color: rgb(182, 211, 225); margin-left: 50px;"> 
+                <div class="card-body">
+                  <h5 class="card-title">Input <input id="input2" style="margin-top: 30PX;" type="number"></h5>
+                  <button id="withdraw">click</button>
+                  <p class="card-text"></p>
+                  
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <script>
+        document.getElementById('Deposit').addEventListener('click',function () {
+
+            var value1=document.getElementById('input1');
+            var newvalue1=value1.value;
+            console.log(newvalue1);
+
+            var newdeposit=document.getElementById('amount1');
+            newdeposit.innerText=newvalue1;            
+        })
+
+        document.getElementById('withdraw').addEventListener('click',function () {
+
+            var value2=document.getElementById('input2');
+            var newvalue2=value2.value;
+            console.log(newvalue2);
+
+            var newwithdraw=document.getElementById('amount2');
+            newwithdraw.innerText=newvalue2;
+            
+        })
+      </script>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
